@@ -37,6 +37,7 @@ jobs:
             ambiente: ${{ github.event.inputs.ambiente }}
         secrets:
             project_id: ${{ secrets.PROJECT_ID }}
+            cluster_name: ${{ secrets.CLUSTER_NAME }}
             region: ${{ secrets.REGION }}
             credentials_json: ${{ secrets.CREDENTIALS_JSON }}
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
