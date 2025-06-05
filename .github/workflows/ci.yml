@@ -30,6 +30,7 @@ jobs:
             - name: Build Docker image
               run: echo "Aqui estamos simulando o build da imagem"
     deploy:
+        needs: build
         uses: vinicius3516/devops-tools/.github/workflows/cd.yml@main
         with:
             manifest: ./k8s/deployment.yaml
